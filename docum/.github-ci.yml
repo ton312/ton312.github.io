@@ -1,0 +1,11 @@
+image: python:3.8
+
+pages:
+    script:
+      - mkdocs build
+      - mv site public
+    artifacts:
+      paths:
+        - public
+    only:
+      - master
