@@ -4,7 +4,7 @@ nav:
  - Model:
       - "model": model/image.md
 
- - "url":
+ - Url:
      - "list":url/worker_list.md
      - "update":url/worker_update.md
      - "create":url/worker_add.md
