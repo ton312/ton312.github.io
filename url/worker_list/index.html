@@ -14,7 +14,7 @@
     
     
       
-        <title>url - Описание сервиса "Ремонт вагонов"</title>
+        <title>list - Описание сервиса "Ремонт вагонов"</title>
       
     
     
@@ -58,6 +58,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#success-responses" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -84,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              url
+              list
             
           </span>
         </div>
@@ -177,14 +182,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Model
@@ -209,6 +212,38 @@
   
 
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Url
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Url" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Url
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
   
   
@@ -221,10 +256,98 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          list
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        url
+        list
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#success-responses" class="md-nav__link">
+    Success Responses
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worker_update/" class="md-nav__link">
+        update
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worker_add/" class="md-nav__link">
+        create
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worker_delete/" class="md-nav__link">
+        delete
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wagon_detail/" class="md-nav__link">
+        detail
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menu/" class="md-nav__link">
+        menu
+      </a>
     </li>
   
 
@@ -242,47 +365,53 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#success-responses" class="md-nav__link">
+    Success Responses
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>url</h1>
+                  <h1>list</h1>
                 
-                <pre><code class="language-python">path('worker/&lt;int:pk&gt;/', views.Worker_detail.as_view(), name=&quot;worker_d&quot;),
-# Вызов страницы выводящей заданного рабочего
-path('worker/list/', views.Worker_List.as_view(), name='worker_l'),
-# Вызов страницы выводящей всех рабочих
-path('worker/&lt;int:pk&gt;/update/', views.WorkerUpdateView.as_view(), name=&quot;worker_u&quot;),
-# Вызов страницы обновляющей заданного рабочего
-path('worker/add/', views.WorkerCreate.as_view()),
-# Вызов страницы добавляющей рабочего
-path('worker/&lt;int:pk&gt;/delete/', views.WorkerDelete.as_view(), name=&quot;worker_del&quot;),
-# Вызов страницы удаляющей рабочего
-path('wagon/&lt;int:pk&gt;/', views.Wagon_detail.as_view(), name=&quot;wagon_d&quot;),
-# Вызов страницы выводящей заданный вагон
-path('wagon/list/', views.Wagon_List.as_view(), name='wagon_l'),
-# Вызов страницы выводящей все вагоны
-path('wagon/&lt;int:pk&gt;/update/', views.WagonUpdateView.as_view(), name=&quot;wagon_u&quot;),
-# Вызов страницы обновляющей заданный вагон
-path('wagon/add/', views.WagonCreate.as_view()),
-# Вызов страницы добавляющей вагон
-path('wagon/&lt;int:pk&gt;/delete/', views.WagonDelete.as_view(), name=&quot;wagon_del&quot;),
-# Вызов страницы удаляющей вагон
-path('repair/&lt;int:pk&gt;/', views.Repair_detail.as_view(), name=&quot;repair_d&quot;),
-# Вызов страницы выводящей заданный ремонт
-path('repair/list/', views.Repair_List.as_view(), name='repair_l'),
-# Вызов страницы выводящей все ремонты
-path('repair/&lt;int:pk&gt;/update/', views.RepairUpdateView.as_view(), name=&quot;repair_u&quot;),
-# Вызов страницы обновляющей заданного ремонт
-path('repair/add/', views.RepairCreate.as_view()),
-# Вызов страницы добавляющей ремонт
-path('repair/&lt;int:pk&gt;/delete/', views.RepairDelete.as_view(), name=&quot;repair_del&quot;),
-# Вызов страницы удаляющей ремонт
-path('menu_reliz/', views.Menu_reliz.as_view()),
-# Вызов страницы показывающей начальную страницу сайта
-</code></pre>
+                <p>Выводит информацию обо всех рабочих</p>
+<p><strong>URL</strong> : <code>/worker/list/</code></p>
+<p><strong>Method</strong> : <code>GET</code></p>
+<p><strong>Auth required</strong> : YES</p>
+<p><strong>Permissions required</strong> : YES</p>
+<p><strong>Data constraints</strong> : <code>{}</code></p>
+<h2 id="success-responses">Success Responses</h2>
+<p><img alt="Alt text" src="../list.png" /></p>
+<p>Также с /wagon/list/ и /repair/list/ за исключением требования к разрешению на просмотр</p>
                 
               
               
@@ -315,6 +444,20 @@ path('menu_reliz/', views.Menu_reliz.as_view()),
           </div>
         </a>
       
+      
+        <a href="../worker_update/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              update
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
